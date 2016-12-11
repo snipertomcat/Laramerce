@@ -1,0 +1,114 @@
+You'll have a better idea of where we are going in terms of the concepts you will learn in this book, which is why I created this roadmap. Part I will be focused on setting up our develop environment. Installing XAMPP, creating our database, and setting up our php configuration are the hot topics of part I.
+
+- Introduction
+    - How the system will look when completed (screenshots)
+    - Why PHP & Laravel
+    - Required software, tools and techniques used in the book
+    - Feature list
+    - Layers in software architecture
+        - Presentation
+        - Database / Persistence
+        - API
+
+- Part I : Setting up Our Development Environment
+    - Installing XAMPP or WAMP for windows
+        - Set up Apache
+            - Set up virtual host
+        - Start httpd and mysql processes   
+    - Create MySQL database
+    - Install some type of visual database manager
+        - The example we will install is phpmyadmin
+- Part II: The Domain Layer
+    - Data Models
+        - Intro to Eloquent ORM
+            - Eloquent commands
+        - Definition of a model & business process
+        - Defining our required tables as a series of data models (migrations)
+        - Defining the relationships between data models and exposing/overriding methods defined the Eloquent base model class (which all entities will extend)
+    - Intro to E-commerce
+        - Definition
+        - Basic Entities in an E-Commerce system
+            - Products
+            - prices
+            - description
+            - availability
+            - Categories
+            - Shopping Carts
+            - Payment Transactions
+            - Orders
+    - Configuring Data Models with Eloquent
+        - Defining these entities and relationships as a series of data models
+        - {Code out each model & explain their relationships}
+        - {Create migrations for each data model}
+        - {Run commands to process the migrations}
+        - Creating test data with fixtures
+- Part III : Creating a System with Laravel
+    - Intro to Laravel (keep breif)
+        - MVC
+        - What, Why, How
+        - The flexibility that the framework provides
+        - Importance of creating a modular application that can be extended
+        - Don't reinvent the wheel, use code that is already proven to dependable solutions to common web development problems (authorization, encryption, UI, routing, etc)
+        - Laravel Components
+            - Routes
+            - Controllers
+            - HTTP Requests & Responses
+            - Listeners & Events
+            - Service Container
+    - Routes
+        - Intro
+            - (brief intro to HTTP)
+                - GET and POST methods
+            - specify HTTP methods for each route
+            - passing data between requests using Laravel's helper methods & session handling mechanisms
+            - Defining actions inside controllers & wiring up the routes with the corresponding controller method
+        - Configuring the routes for our application
+    - Easy Authentication with Laravel
+        - Implementing authentication with a simple Artisan command - make:auth
+        - Explain login form / auth controller / checking credentials
+        - Go through process of registration
+        - General explanation of the Laravel authentication process
+    - The View Layer
+        - Intro to presentation layer
+        - Intro to blade template engine
+        - Describe all views and their purpose in the application: 
+            - Categories
+            - Individual Product Pages
+            - checkout page
+            - home page splash screen
+            - multiple product view
+            - cart view
+                - deleting items
+                - changing questions
+                - shipping information / estimates 
+            - User profile page
+            - Payment page
+        - {Build out page templates, controller actions, requests}
+    - Utilizing existing software packages 
+        - Describe the pre-built solutions that integrate easily into Laravel
+        - List the ones that are going to be used inside this system
+            - 
+    - Tying everything together
+        - Describe the interactions between the different layers of the application and the domain models
+        - "Wire" together all views created in previous chapter with their corresponding controllers:
+            - HomeController
+            - ProductController
+            - CartController
+            - CategoryController
+            - OrderController
+            - UserController
+            - PaymentController
+            - AjaxController
+            - ProfileController
+    - Forms
+        - Leveraging Laravel's Form Component
+        - Creating forms that actually correlate to the data models
+        - The form submission process
+            - Form Handlers
+            - Form Requests (post)
+            - Responses
+        - Form validation (input validation)
+        - Implement logic for submitted forms 
+            - Controller methods
+            - Form Handlers
+    
