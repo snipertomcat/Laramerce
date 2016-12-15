@@ -1,4 +1,8 @@
-You'll have a better idea of where we are going in terms of the concepts you will learn in this book, which is why I created this roadmap. Part I will be focused on setting up our develop environment. Installing XAMPP, creating our database, and setting up our php configuration are the hot topics of part I.
+You'll have a better idea of where we are going in terms of theconcepts you will learn in this book, which is why I created
+this roadmap. Part I will be focused on setting up our 
+develop environment. Installing XAMPP, creating our database,
+and setting up our php configuration are the hot topics of
+part I.
 
 - Introduction
     - How the system will look when completed (screenshots)
@@ -87,7 +91,6 @@ You'll have a better idea of where we are going in terms of the concepts you wil
     - Utilizing existing software packages 
         - Describe the pre-built solutions that integrate easily into Laravel
         - List the ones that are going to be used inside this system
-            - 
     - Tying everything together
         - Describe the interactions between the different layers of the application and the domain models
         - "Wire" together all views created in previous chapter with their corresponding controllers:
@@ -111,4 +114,13 @@ You'll have a better idea of where we are going in terms of the concepts you wil
         - Implement logic for submitted forms 
             - Controller methods
             - Form Handlers
-    
+Part IV : Continuous Integration
+    - Introduction to CI
+        - Why it is important
+        - The importance of automation
+            - Jobs and automated tasks
+        - Testing
+            - Intro
+            - Basics of phpunit
+        - Automate testing after every code change to ensure quality
+        
